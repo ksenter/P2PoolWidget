@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kensenter.p2poolwidget"
+    android:versionCode="22"
+    android:versionName="2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    
+	<uses-permission android:name="android.permission.INTERNET" /> 
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.kensenter.p2poolwidget.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+        android:name="com.kensenter.p2poolwidget.WidgetDialogActivity"
+        android:noHistory="true"
+        android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+
+        <receiver android:name=".p2pWidget" android:label="P2PoolWidget">
+             <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE2" />
+                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+                 <action android:name="com.kensenter.p2poolwidget.widgetshowdialog" />
+             </intent-filter>
+             <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/p2pwidget_provider" />
+         </receiver>
+          
+    </application>
+
+</manifest>

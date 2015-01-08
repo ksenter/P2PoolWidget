@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">P2PoolWidget</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lbl_IPDomain">IP / Domain</string>
+    <string name="hint_IP">server.com or 12.34.56.78 (if you don\'t have a static IP you will want to use a dynamic dns service</string>
+    <string name="lbl_Port">Port</string>
+    <string name="lbl_paykey">Payout Key</string>
+    <string name="btn_OK">OK</string>
+    <string name="lblhashalert">When below</string>
+    <string name="chkAlertHash">Alert when hashrate is low?</string>
+    <string name="lblMhs">MH/s</string>
+    <string name="chkAlertDOA">Alert when DOA rate is high?</string>
+    <string name="lblDOAAbove">When Above</string>
+    <string name="lblpercent">%</string>
+    <string name="lblRemoveLine">Remove extra space above time</string>
+    <string name="lblOptional">optional</string>
+    <string name="lblcommentlink"><a href="https://bitcointalk.org/index.php?topic=224392.0">Comments/Questions</a></string>
+    
+    <string-array name="hashes_array">
+        <item>H/s</item>
+        <item>KH/s</item>
+        <item>MH/s</item>
+        <item>GH/s</item>
+    </string-array>
+</resources>
